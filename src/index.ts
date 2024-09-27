@@ -1,13 +1,9 @@
 import { registerPlugin } from '@capacitor/core';
+import type { TelnetConnectionPlugin } from './definitions';
 
-import type { telentConnectionPlugin } from './definitions';
-
-const telentConnection = registerPlugin<telentConnectionPlugin>(
-  'telentConnection',
-  {
-    web: () => import('./web').then(m => new m.telentConnectionWeb()),
-  },
-);
+const TelnetConnection = registerPlugin<TelnetConnectionPlugin>('TelnetConnection', {
+  web: () => import('./web').then(m => new m.TelnetConnectionWeb()),
+});
 
 export * from './definitions';
-export { telentConnection };
+export { TelnetConnection };
