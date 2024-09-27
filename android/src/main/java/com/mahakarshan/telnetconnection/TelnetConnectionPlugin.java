@@ -1,4 +1,4 @@
-package com.example.telnetconnection;
+package com.mahakarshan.telnetconnection;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
